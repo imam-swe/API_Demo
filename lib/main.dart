@@ -1,3 +1,5 @@
+import 'package:api_practice_demo/login.dart';
+import 'package:api_practice_demo/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:api_practice_demo/splash.dart';
 import 'package:api_practice_demo/homepage.dart';
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       future: Init.instance.initialize(),
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return MaterialApp(
+          return const MaterialApp(
             debugShowCheckedModeBanner: false,
             home: Splash(),
           );
@@ -25,9 +27,11 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: ThemeData(
-              primarySwatch: Colors.blue,
+              primarySwatch: Colors.teal,
             ),
-            home: const MyHomePage(),
+            // home: const MyHomePage(),
+            // home: const LogInPage(),
+            home: RegistrationPage(),
           );
         }
       },
