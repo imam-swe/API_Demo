@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of pages;
 
 class LogInPage extends StatefulWidget {
   const LogInPage({Key? key}) : super(key: key);
