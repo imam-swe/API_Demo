@@ -1,14 +1,14 @@
 part of pages;
 
 //final auth=FirebaseAuth.instance;
-class RegistrationPage extends StatefulWidget {
-  const RegistrationPage({Key? key}) : super(key: key);
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
-  _RegistrationPageState createState() => _RegistrationPageState();
+  _SignUpPageState createState() => _SignUpPageState();
 }
 
-class _RegistrationPageState extends State<RegistrationPage> {
+class _SignUpPageState extends State<SignUpPage> {
   // late final bool who;
   // _RegistrationPageState){
   // }

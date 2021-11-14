@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (_) => const SplashPage(),
           "/intro": (_) => const IntroPage(),
+          "/login": (_) => const LogInPage(),
+          "/signup": (_) => const SignUpPage(),
         },
         debugShowCheckedModeBanner: false,
       ),

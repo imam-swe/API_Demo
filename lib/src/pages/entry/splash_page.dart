@@ -23,15 +23,13 @@ class _SplashPageState extends State<SplashPage> {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            'images/splashbg.png',
-            // 'assets/splash101.jpg',
-            // 'assets/splashbg1.jpg',
-            fit: BoxFit.fill,
+            'images/splashbg.jpg',
+            fit: BoxFit.cover,
           ),
           Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            color: Colors.white.withOpacity(0.6),
+            color: Colors.white.withOpacity(0),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height,
@@ -42,7 +40,7 @@ class _SplashPageState extends State<SplashPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'images/picture1.png',
+                  'images/splashlogo.png',
                   fit: BoxFit.fill,
                   width: 250.w,
                 ),
