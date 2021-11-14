@@ -20,6 +20,45 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
           primaryColor: mainColorSwatch,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              //primary: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              padding: EdgeInsets.all(kButtonPadding),
+              minimumSize: Size(double.infinity, kButtonPadding),
+            ),
+          ),
+          outlinedButtonTheme: OutlinedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              // primary: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              side: const BorderSide(
+                color: mainColor,
+              ),
+              minimumSize: Size(double.infinity, kButtonPadding),
+              padding: EdgeInsets.all(kButtonPadding),
+            ),
+          ),
+          inputDecorationTheme: InputDecorationTheme(
+            fillColor: placeholderColor,
+            filled: true,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(50),
+              borderSide: BorderSide.none,
+            ),
+            floatingLabelStyle: TextStyle(
+              color: secondaryFontColor,
+              height: 10.h,
+            ),
+            contentPadding: EdgeInsets.symmetric(
+              vertical: kTextFieldPadding,
+              horizontal: kTextFieldPadding * 2,
+            ),
+          ),
         ),
         routes: {
           "/": (_) => const SplashPage(),

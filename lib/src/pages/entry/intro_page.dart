@@ -59,8 +59,8 @@ class _IntroPageState extends State<IntroPage>
                     height: 150.h,
                   ),
                   SizedBox(
-                    // width: 1100.w,
-                    height: 1000.h,
+                    width: 600.w,
+                    height: 400.h,
                     child: Image.asset(
                       _data[index].imagePath!,
 

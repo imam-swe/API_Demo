@@ -9,18 +9,18 @@ class IntroModel {
 
   static List<IntroModel> data = [
     IntroModel(
-      imagePath: 'assets/intro1.png',
+      imagePath: 'images/intro1.jpg',
       title: 'Find Food You Love',
       desc:
           'Discover the best foods from over 1,00\nrestaurants and fast delivery to your\ndoorstep',
     ),
     IntroModel(
-      imagePath: 'assets/intro2.png',
+      imagePath: 'images/intro2.jpg',
       title: 'Fast Delivery',
       desc: 'Fast food delivery to your home, office\nwhere you are',
     ),
     IntroModel(
-      imagePath: 'assets/intro3.png',
+      imagePath: 'images/intro3.jpg',
       title: 'Live Tracking',
       desc:
           'Real time tracking of your food on the app\nonce you placed the order',
