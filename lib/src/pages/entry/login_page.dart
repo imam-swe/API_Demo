@@ -1,12 +1,8 @@
 part of pages;
 
-class LogInPage extends StatefulWidget {
+class LogInPage extends StatelessWidget {
   const LogInPage({Key? key}) : super(key: key);
-  @override
-  _LogInPageState createState() => _LogInPageState();
-}
 
-class _LogInPageState extends State<LogInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,17 +15,21 @@ class _LogInPageState extends State<LogInPage> {
           child: Container(
             height: MediaQuery.of(context).size.height * 1,
             width: MediaQuery.of(context).size.width * 1,
-            color: Colors.blue,
+            color: Colors.white,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const LoginRegistrationHeader(
+                  title: 'Login',
+                  subTitle: 'Add your details to login',
+                ),
                 Container(
                   height: 150,
                   width: 350,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                    image: AssetImage("images/picture1.png"),
+                    image: AssetImage("images/intro4.jpg"),
                   )),
                 ),
                 const SizedBox(
@@ -85,13 +85,23 @@ class _LogInPageState extends State<LogInPage> {
                   height: 20,
                 ),
                 TextButton(
-                    onPressed: () {
-                      //Navigator.push(context, MaterialPageRoute(builder: (context)=>RegistrationPage(who)));
-                    },
-                    child: const Text(
-                      "Or Registration",
-                      style: TextStyle(color: Colors.white),
-                    ))
+                  onPressed: () {
+                    //Navigator.push(context, MaterialPageRoute(builder: (context)=>RegistrationPage(who)));
+                  },
+                  child: const Text(
+                    "Or Registration",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                const Expanded(child: SizedBox.shrink()),
+                LoginRegisterFooter(
+                  question: 'Don\'t have an Account?',
+                  actionText: ' Sign Up',
+                  action: () {
+                    Navigator.pushReplacementNamed(context, kRouteRegister);
+                  },
+                ),
+                SizedBox(height: kVerticalPadding),
               ],
             ),
           ),

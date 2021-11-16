@@ -44,31 +44,31 @@ class _SplashPageState extends State<SplashPage> {
                   fit: BoxFit.fill,
                   width: 250.w,
                 ),
-                // Text.rich(
-                //   TextSpan(
-                //     text: 'Meal',
-                //     style: Theme.of(context).textTheme.headline4!.copyWith(
-                //           fontWeight: FontWeight.bold,
-                //           color: mainColor,
-                //         ),
-                //     children: const [
-                //       TextSpan(
-                //         text: ' Monkey',
-                //         style: TextStyle(color: primaryFontColor),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-                // SizedBox(
-                //   height: 24.h,
-                // ),
-                // Text(
-                //   'FOOD DELIVERY',
-                //   style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                //         color: secondaryFontColor,
-                //         letterSpacing: 3,
-                //       ),
-                // ),
+                Text.rich(
+                  TextSpan(
+                    text: 'API',
+                    style: Theme.of(context).textTheme.headline4!.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: mainColor,
+                        ),
+                    children: const [
+                      TextSpan(
+                        text: ' Intigraations',
+                        style: TextStyle(color: primaryFontColor),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 24.h,
+                ),
+                Text(
+                  'Demo API intregration Project',
+                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        color: secondaryFontColor,
+                        letterSpacing: 3,
+                      ),
+                ),
               ],
             ),
           )
