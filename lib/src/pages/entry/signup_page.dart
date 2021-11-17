@@ -54,8 +54,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 10,
                 ),
                 Container(
-                  height: 60,
-                  width: 350,
+                  height: 60.h,
+                  width: 350.w,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.black12),
@@ -75,8 +75,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 10,
                 ),
                 Container(
-                  height: 60,
-                  width: 350,
+                  height: 60.h,
+                  width: 350.w,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.black12),
@@ -98,8 +98,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 10,
                 ),
                 Container(
-                  height: 60,
-                  width: 350,
+                  height: 60.h,
+                  width: 350.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.black12,
@@ -119,8 +119,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 20,
                 ),
                 Container(
-                  height: 60,
-                  width: 350,
+                  height: 60.h,
+                  width: 350.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.black12,
